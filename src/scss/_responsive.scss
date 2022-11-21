@@ -1,0 +1,939 @@
+@media (min-width: 100px) and (max-width:371px){
+	#how{
+		.sticky{
+			position: fixed;
+			padding: 1rem 0;
+			margin: 0;
+			top: 0;
+			width: 100%;
+			z-index: 99;
+			background-color: $primary;
+			height: 55px;
+		}
+		section.how_work_designers{
+			.work_card{
+				margin-right: 0;
+				margin-top: 2rem;
+				.designer_card{
+					margin: 0 auto;
+					width: 100%;
+				}
+			}
+		}
+		section.how_top_bar{
+			.top_bar_links{
+				ul{
+					li{
+						padding: 0 1rem 0 0 !important;
+						line-height: 3;
+						h5{
+							font-size: 20px;
+							a{
+								font-size: 16px;
+							}
+						}
+						&:last-child{
+							padding:0 !important;
+						}
+					}
+				}
+			}	
+		}
+	}
+	#explore{
+		section.explore_filter_list{
+			.explore_filters{
+				.filter_contents{
+					padding: 1.5rem 0 0;
+					.col-filter-category{
+						float: left;
+						width: 50%;
+						.form-group{
+							width: 70% !important;
+						}
+					}
+					.col-filter-status{
+						float: left;
+						width: 50%;
+					}
+					.col-filter-types{
+						float: left;
+						width: 100%;
+						padding: 1.5rem 0 0;
+						.btn-group-with-label{
+							float: left;
+						}
+					}
+					.col-filter-days{
+						float: left;
+						width: 100% !important;
+					}
+					.col-filter-prize{
+						float: left;
+						width: 100% !important;
+						.col-prize{
+							float: left;
+							width: 50%;
+						}
+					}
+					.filter-buttons{
+						clear: both;
+						padding-top: 1rem;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media(max-width:767px){
+	nav.navbar {
+		margin: 0 !important;
+		padding-bottom: 25px;
+	}
+	.splide__arrows {
+		display: none;
+	}
+	#home{
+		section.get_design{
+			.description{
+				margin-top: 1.5rem;
+				margin-bottom:2.2rem;
+			}
+			.design_authors{
+				display: none;
+			}
+			button{
+				width: 100%;
+			}
+		}	
+		section.trusted_by{
+			p{
+				padding-top: 1.6rem;
+			}
+			.trusted_images{
+				padding-top: 0;
+				padding-bottom: 1.5rem;
+			}
+		}	
+		section.category_slider{
+			h3{
+				margin-top: 1.5rem;
+			}
+			#image-slider{
+				margin-top: 1.5rem;
+			}
+			ul{
+				margin-top: 1rem;
+			}
+			.see_categories{
+				margin-top: 3.5rem;
+			}
+		}
+		section.divide_line1{
+			margin-top:1.5rem;
+		}
+		section.inspired_design{
+			margin-top: 2.5rem;
+			.inspired_items{
+				margin-top: 1.5rem;
+				.beautiful_design{
+					padding-bottom:1.5rem;
+				}
+				.inspired_second{
+					margin-top: 0;
+				}
+			}
+			.inspired_buttons{
+				margin-top: 0.5rem;
+			}
+		}
+		section.zignative_work{
+			margin-top: 1.5rem;
+			h3{
+				padding-top: 1.5rem;
+			}
+			.work_contents{
+				margin-top: 1.5rem;
+				.work_description{
+					margin-top: 1.5rem;
+					margin-bottom: 1.5rem;
+				}
+			}
+		}
+		section.zignative_scales{
+			margin-top: 1.5rem;
+			h3{
+				padding-top: 0;
+			}
+			.scales_contents{
+				margin-top: 1.5rem;
+				.scales_button{
+					margin-top: 2rem;
+				}
+				.scale_left{
+					display: none;
+				}
+				.description{
+					margin-top:1.5rem;
+					margin-left: 80px;
+				}
+			}
+			#scales-slider{
+				ul{
+					margin-top:  -2.5rem;
+				}
+			}
+			.scales_button{
+				margin-top: 1.5rem;
+				button{
+					margin-top: 1.5rem;
+				}
+			}
+		}
+		section.divide_line2{
+			margin-top: 1.5rem;
+		}
+		section.preferred_reason{
+			margin-top: 1.5rem;
+			padding-top: 0;
+			#preferred-slider{
+				margin-top: 1.5rem;
+				padding-bottom: 4.5rem;
+				ul{
+					margin-top: 1rem;
+				}
+			}
+			.preferred_contents{
+				flex-direction: column;
+				padding: 0 !important;
+				.circle_avatar {
+					margin: 0 auto;
+				}
+				.preferred_description {
+					width: 100% !important;
+					padding: 0 1rem !important;
+				}
+				blockquote{
+					margin: 0;
+				}
+			}
+		}
+	}
+	#pricing{
+		section.get_logodesign{
+			.show_pricing{
+				padding-bottom: 2rem;
+				.dropdown{
+					a{
+						font-size: 40px;
+						#dropdownMenu{
+							width: 18rem;
+						}
+					}
+				}
+			}
+		}
+		section.price_table{
+			.description{
+				margin-top: -1.5rem;
+				margin-bottom: -1.5rem;
+				p{
+					padding-left: 20px;
+					padding-right: 20px;		
+				}
+			}
+			.paragraph{
+				padding: 1.5rem 0;
+			}
+			.check_badge{
+				margin: 0 auto;
+			}
+			.long_dash{
+				margin: 0 auto;
+			}
+			.table--packages thead th:first-child:not([colspan='5']){
+				display: none;
+			}
+			.table--packages tbody td[colspan='5'],
+			.table--packages tbody[colspan='5'],
+			.table--packages thead[colspan='5']{
+				display: table-cell;
+				text-align: left;
+			}
+			.table--packages tbody td:first-child:not([colspan='5']),
+			.table--packages tbody th:first-child:not([colspan='5']),
+			.tabke--packages thead td:first-child:not([colspan='5']),
+			.table--packages thead th:first-child:not([colspan='5']){
+				display: none;
+			}
+			.table-cell{
+				padding: 0 !important;
+			}
+			.table-cell.price{
+				padding: 0 !important;
+			}
+			.contest_button{
+				margin-top: -1rem;
+				margin-bottom: 2rem;
+			}
+		}
+		section.price_help{
+			margin-top: 2rem;
+			h3{
+				padding-top: 2rem;
+			}
+			p.description{
+				padding-left: 20px;
+				padding-right: 20px;
+			}
+			.help_contents{
+				padding-top: 0.5rem;
+				.content{
+					ul{
+						margin-bottom: 2rem;
+					}
+					li:before{
+						margin-top:0.8rem;
+					}
+					li{
+						p{
+							padding-top: 0;
+						}
+					}
+				}
+				button{
+					margin-top: -1rem;
+				}
+			}
+		}
+		section.price_faqs{
+			margin-top: 2rem;
+			.accordion{
+				padding-left: 1rem;
+				padding-right: 1rem;
+			}
+		}			
+	}
+	#logo{
+		section.custom_logo_header{
+			.description{
+				padding-right: 0;
+				.content2, h5{
+					padding-top: 0.5rem;
+				}
+			}
+			.design_authors{
+				display: none;
+			}
+		}
+		section.inspired_logo_design{
+			margin-top: 1.5rem;
+			.inspired_items{
+				margin-top: 1.5rem;
+				.beautiful_design{
+					padding-bottom:1.5rem;
+				}
+				.inspired_second{
+					margin-top: 0;
+				}
+			}
+			.inspired_buttons{
+				margin-top: 0.5rem;
+			}
+		}
+		section.logo_design_qa{
+			margin-top: 2.5rem;
+			.accordion{
+				padding: 0 1rem 0 1rem;
+			}
+		}
+	
+		section.best_logo_design{
+			margin-top: 2.5rem;
+			h3{
+				padding-top: 2.5rem;
+			}
+			.scales_contents{
+				margin-top: 1.5rem;
+				.scales_img_slider{
+					display: none;
+				}
+				.scales_button{
+					margin-top: 2rem;
+				}
+				.description{
+					margin-top:1.5rem;
+					margin-left: 80px;
+				}
+			}
+			#scales-slider{
+				ul{
+					margin-top:  -2.5rem;
+				}
+			}
+			.scales_button{
+				margin-top: 1.5rem;
+				button{
+					margin-top: 1.5rem;
+				}
+			}
+		}
+		section.better_logo_design{
+			margin-top: 1.5rem;
+			h3{
+				padding-top: 1.5rem;
+			}
+			.work_contents{
+				padding: 0;
+				margin-top: 1.5rem;
+				.col-lg-1{
+					display: none;
+				}
+				.work_description{
+					margin-top: 1.5rem;
+					margin-bottom: 1.5rem;
+				}
+			}
+		}
+		section.logo_design_contest{
+			.contest_items{
+				padding: 2.5rem 0;
+				.contest_item{
+					padding: 0 0 1rem 0;
+					border-bottom: none;
+					.contest_image_side{
+						width: 100%;
+						position: relative;
+						.contest_item_image{
+							img{
+								width: 100% !important;
+							}
+						}
+					}
+					.description_side{
+						margin: 1rem 0 0;
+						.contest_description{
+							width: 100%;
+							margin-right: 0;
+							.category{
+								padding: 0 0 0.5rem !important;
+							}
+						}
+						.properties{
+							position: relative;
+							border-bottom: none;
+							.contest_properties{
+								li{
+									padding: 0;
+								}
+							}
+						}
+						.contest_category{
+							ul{
+								li{
+									padding-top: 0.3rem;
+								}
+							}
+						}
+					}		
+				}
+			}
+			.logo_view_btn{
+				margin-top: -2rem;
+			}
+		}		
+	}
+	#how{
+		section.how_top_bar{
+			.top_bar_links{
+				ul{
+					li{
+						padding: 0 1.5rem 0 0 ;
+					}
+					.top_bar_button{
+						display: none;
+					}
+				}
+			}	
+		}
+	
+		section.how_tell_need{
+			.how_design_detail{
+				margin-top: 2rem;
+			}
+		}
+		
+		section.how_work_designers{
+			.work_card{
+				margin-right: 0;
+				margin-top: 2rem;
+				.designer_card{
+					margin: 0 auto;
+				}
+			}
+		}
+	
+		section.how_winning_design{
+			.winning_button{
+				text-align: center;
+			}
+			.work_winning{
+				.winner_design{
+					margin: 3rem auto;
+					width: 100%;
+					.winner_image{
+						.design_image{
+							display: block;
+							img{
+								width: 100%;
+							}
+						}				
+					}
+				}
+			}
+			.work_file{
+				display: none;
+			}
+		}
+	
+		section.how_why_us{
+			.rating{
+				padding: 0;
+			}
+			.categories{
+				padding: 0;
+			}
+			.creativity{
+				padding: 0;
+			}
+		}			
+	}
+	#explore{
+		section.explore_filter_list{
+			.explore_filters{
+				.filter_contents{
+					padding: 1.5rem 0 0;
+					.col-filter-category{
+						float: left;
+						width: 50%;
+						.form-group{
+							width: 70% !important;
+						}
+					}
+					.col-filter-status{
+						float: left;
+						width: 50%;
+					}
+					.col-filter-types{
+						float: left;
+						width: 100%;
+						padding: 1.5rem 0 0;
+						.btn-group-with-label{
+							float: left;
+						}
+					}
+					.col-filter-days{
+						float: left;
+						width: 50%;
+					}
+					.col-filter-prize{
+						float: left;
+						width: 50%;
+						.col-prize{
+							float: left;
+							width: 50%;
+						}
+					}
+					.filter-buttons{
+						clear: both;
+						padding-top: 1rem;
+					}
+				}
+			}
+			.contest_items{
+				.contest_item{
+					padding: 0 0 1rem 0;
+					border-bottom: none;
+					.contest_image_side{
+						width: 100%;
+						position: relative;
+						.contest_item_image{
+							img{
+								width: 100%;
+							}
+						}
+					}
+					.description_side{
+						margin: 1rem 0 0 !important;
+						.contest_description{
+							width: 100%;
+							margin-right: 0 !important;
+							.category{
+								padding: 0 !important;
+							}
+							.detail{
+								padding-top: 0.5rem;
+							}
+						}
+						.properties{
+							position: relative !important;
+							border-bottom: none !important;
+							.contest_properties{
+								li{
+									padding: 0 0 0 0;
+								}
+							}
+						}
+						.contest_category{
+							ul{
+								li{
+									padding-top: 0.3rem !important;
+								}
+							}
+						}
+					}		
+				}
+			}
+		}
+		section.explore_description{
+			p{
+				padding: 0 !important;
+			}
+		}
+	}
+}
+
+@media (min-width:767px) and (max-width:1024px){
+	#home{
+		section.get_design{
+			.description{
+				margin-top: 1.5rem;
+				margin-bottom:2.2rem;
+				width: 200%;
+				padding: 0 1rem 0 3rem;
+			}
+			.design_authors{
+				display: none;
+			}
+			button{
+				width: 100%;
+			}
+		}
+	
+		section.zignative_scales{
+			.scales_contents{
+				.scale_right{
+					width: 100%;
+				}
+				.scale_left{
+					display: none;
+				}
+				.image{
+					margin-left: 17px;
+				}
+			}
+			#scales-slider{
+				.splide__pagination{
+					margin-top: -2rem;
+				}
+			}
+		}
+		section.divide-line2{
+			margin-top: 1.5rem ;
+		}
+		section.preferred_reason{
+			padding-top: 1.5rem ;
+			#preferred-slider{
+				margin-top: 1.5rem;
+				padding-bottom: 4.5rem;
+				ul{
+					margin-top: 1rem;
+				}
+			}
+			.preferred_contents{
+				flex-direction: column;
+				padding: 0;
+				.circle_avatar {
+					margin: 0 auto;
+				}
+				.preferred_description {
+					width: 100% !important;
+					padding: 0 1rem !important;
+				}
+				blockquote{
+					margin: 0;
+				}
+			}
+		}
+	}
+	#pricing{
+		section.price_table{
+			.description{
+				p{
+					padding: 0;
+				}
+			}
+			.contest_button{
+				padding: 0 0 2rem;
+			}
+		}
+	
+		section.price_help{
+			margin-top: 0;
+			.description{
+				padding: 0;
+			}
+		}
+	
+		section.price_faqs{
+			margin-top: 2rem;
+			.accordion{
+				padding: 0;
+			}
+		}
+	}
+	#logo{
+		section.custom_logo_header{
+			.description{
+				padding: 0;
+				width: 175%;
+			}
+			.design_authors{
+				display: none;
+			}
+		}
+		section.logo_design_contest{
+			.contest_items{
+				padding-bottom: 10px;
+	
+				.contest_item{
+					.description_side{
+						.contest_description{
+							width: 100%;
+							margin-right: 0;
+							.category{
+								padding: 0 0 0.5rem !important;
+							}
+						}
+						.properties{
+							position: relative;
+						}
+					}
+					li{
+						padding:0.1rem;
+					}
+				}
+			}
+			
+		}
+		section.best_logo_design{
+			.scales_contents{
+				.scales_description{
+					width: 100%;
+					.image{
+						margin-left: 17px;
+					}
+				}
+				.scales_img_slider{
+					display: none;
+				}
+	
+			}
+			#scales-slider{
+				.splide__pagination{
+					margin-top: -2rem;
+				}
+			}
+		}
+		section.better_logo_design{
+			h3{
+				padding-top: 1.5rem;
+			}
+			.work_contents{
+				padding: 0;
+				margin-top: 2rem;
+				.col-lg-3{
+					width: 33.3333%;
+				}
+				.col-lg-1{
+					display: none;
+				}
+			}
+		}
+		section.logo_design_qa{
+			.accordion{
+				padding: 0 2rem 0 2rem;
+			}
+		}
+	}
+	#how{
+		section.how_top_bar{
+			.top_bar_links{
+				ul{
+					li{
+						padding: 0 1.5rem 0 0;
+					}
+				}
+			}	
+		}
+	
+		section.how_work_designers{
+			.work_card{
+				margin-right: 0;
+			}
+		}
+	
+		section.how_winning_design{
+			.work_winning{
+				.winner_design{
+					margin-right: 0 !important;
+				}
+			}
+			.work_file{
+				.approve_file{
+					margin-right: 0 !important;
+				}
+			}
+		}
+		section.how_why_us{
+			.rating{
+				padding: 0 !important;
+			}
+			.categories{
+				padding: 0 !important;
+			}
+			.creativity{
+				padding: 0 !important;
+			}
+		}
+	}	
+	#explore{
+		section.explore_filter_list{
+			.filter_contents{
+				.row-filters{
+					display: block !important;
+					.col-filter-category{
+						float: left;
+						width: 30%;
+						.form-group{
+							width: 80% !important;
+						}
+					}
+					.col-filter-status{
+						float: left;
+						width: 30%;
+					}
+					.col-filter-types{
+						float: left;
+						width: 40%;
+						.btn-group-with-label{
+							float: left;
+						}
+					}
+					.col-filter-days{
+						float: left;
+						width: 33.333%;
+					}
+					.col-filter-prize{
+						float: left;
+						width: 33.333%;
+						.col-prize{
+							float: left;
+							width: 50%;
+						}
+					}
+				}
+				.filter-buttons{
+					clear: both !important;
+					padding-top: 1rem;
+				}
+			}
+			.contest_items{
+				padding-bottom: 10px !important;
+	
+				.contest_item{
+					.description_side{
+						.contest_description{
+							width: 100%;
+							margin-right: 0;
+							.category{
+								display: block;
+								padding: 0 !important;
+							}
+							.detail{
+								padding-top: 0.5rem;
+							}
+						}
+						.properties{
+							position: relative;
+						}
+					}
+					li{
+						padding:0.1rem;
+					}
+				}
+			}
+		}
+		section.explore_decription{
+			p{
+				padding: 0 !important;
+			}
+		}
+	}
+}
+@media (min-width: 1024px) and (max-width:1200px){
+	#explore{
+		section.explore_filter_list{
+			.filter_contents{
+				.row-filters{
+					display: block !important;
+					.col-filter-category{
+						float: left;
+						width: 30%;
+						.form-group{
+							width: 80% !important;
+						}
+					}
+					.col-filter-status{
+						float: left;
+						width: 30%;
+					}
+					.col-filter-types{
+						float: left;
+						width: 40%;
+						.btn-group-with-label{
+							float: left;
+						}
+					}
+					.col-filter-days{
+						float: left;
+						width: 33.333%;
+					}
+					.col-filter-prize{
+						float: left;
+						width: 33.333%;
+						.col-prize{
+							float: left;
+							width: 50%;
+						}
+					}
+				}
+				.filter-buttons{
+					clear: both !important;
+					padding-top: 1rem;
+				}
+			}
+		}
+	}
+}
+@media (min-width: 1024px) and (max-width:1400px){
+	#explore{
+		section.explore_filter_list{
+			.category{
+				display: block;
+				padding: 0 !important;
+			}
+		}
+	}
+} 

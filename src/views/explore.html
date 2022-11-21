@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Zignative</title>
+    <meta name="author" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<body>
+    <div id="cover" 
+        style="position: absolute;
+            color: #0DB213;
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
+            z-index: 9999;
+            text-align: center;
+            padding-top: 25%">
+        <div class="spinner-border" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>    
+    </div>
+    
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="./index.html"><img src="./images/logo.png" class="img-fluid" alt="logo"/></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown">CATEGORIES</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="./custom_logo_design.html">Custom Logo Design</a></li>
+                                    <li><a class="dropdown-item" href="./business_card_design.html">Business Card Design</a></li>
+                                    <li><a class="dropdown-item" href="#">Custom Mobile Design</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./explore.html">EXPLORE</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./how_it_works.html">HOW IT WORKS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="pricing.html">PRICING</a>
+                            </li>
+                        </ul>
+                        <ul class="d-flex navbar-nav sign_in">
+                            <li class="nav-item"><a class="nav-link" href="#">LOG IN</a></li>
+                            <li class="nav-item"><button class="btn btn-primary">SIGN UP</button></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="explore">
+        <section class="explore_header">
+            <div class="container">
+                <div class="current_url">
+                    <ul>
+                        <li>Home</li>
+                        <li>Explore</li>
+                    </ul>
+                </div>
+                <div class="row content pb-4"> 
+                    <div class="col-md-6 col-sm-12 description">
+                        <h1>Thousands of projects just like yours.</h1>
+                    </div>
+                    <div class="col-md-5 col-sm-12 content_button text-center">
+                        <button class="btn btn-default">GET STARTED</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="explore_filter_list">
+            <div class="explore_accordion">
+                <div class="container">
+                    <form class="explore_filters">
+                        <div class="row filter_header">
+                            <div class="col-md-6 col-12">
+                                <div class="row">
+                                    <div class="col-md-8 col-9">
+                                        <div class="input-group mb-3">
+                                            <input type="text" class="form-control" placeholder="Search projects" aria-label="Search projects" aria-describedby="button-addon">
+                                            <button class="btn btn-outline-secondary search_btn" type="button" id="button-addon1"><i class="bi bi-search"></i></button>
+                                        </div>     
+                                    </div>
+                                    <div class="col-md-auto col-3">
+                                        <button class="btn btn-white" type="button" onclick="explore.drop_func()">
+                                            <i class="bi bi-funnel-fill"></i>
+                                            <span class="d-none d-md-inline-block"> Filters</span>
+                                        </button>
+                                    </div>     
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-12">
+                                <div class=" row justify-content-end">
+                                    <div class="col-md-4 col-12">
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option value="newest" selected>Newest first</option>
+                                            <option value="highest">Highest prize first</option>
+                                            <option value="most_entries">Most entries first</option>
+                                          </select>    
+                                    </div>    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter_contents">
+                            <div class="collapse" id="advancedFiltersWrap" aria-expanded="true">
+                                <div class="content-box-section">
+                                    <div class="row-filters d-md-flex justify-content-between">
+                                        <div class="col-filter col-filter-category">
+                                            <div class="form-group">
+                                                <div class="category-filter-wrap">
+                                                    <label for="btnCategoryDropdown">Category</label>
+                                                    <!-- Example single danger button -->
+                                                    <div>
+                                                        <select class="form-select" aria-label="Default select example">
+                                                            <option value="all" selected>All Categories</option>
+                                                            <option value="3d_modeling">3D Modeling Design</option>
+                                                            <option value="3d_rendering">3D Rendering Design</option>
+                                                            <option value="cad">CAD Design</option>
+                                                            <option value="consumer">Consumer Products</option>
+                                                            <option value="engineering">Engineering</option>
+                                                          </select>   
+                                                    </div>
+                                                </div><!-- .category-filter-wrap -->
+                                            </div>
+                                        </div><!-- .col-filter -->
+                
+                                        <div class="col-filter col-filter-status">
+                                            <div class="form-group">
+                                                <label for="">Contest status</label>
+                                                <div>
+                                                    <div class="btn-group" role="group" aria-label="Contest Status Group">
+                                                        <input type="checkbox" class="btn-check" name="status_checkbox" id="status_1" onclick="explore.active_left('status_1','status_2')" autocomplete="off">
+                                                        <label class="btn btn-outline-primary" for="status_1">Open</label>
+                                                      
+                                                        <input type="checkbox" class="btn-check" name="status_checkbox" id="status_2" onclick="explore.active_right('status_1','status_2')" autocomplete="off">
+                                                        <label class="btn btn-outline-primary" for="status_2">Finished</label>
+                                                    </div>   
+                                                </div>
+                                            </div><!-- .form-group -->
+                                        </div><!-- .col-filter -->
+
+                                        <div class="col-filter col-filter-types">
+                                            <div class="form-group">
+                                                <label for="">Contest types</label>
+                                                <div class="d-md-flex justify-content-between">
+                                                    <div class="btn-group-with-label">
+                                                        <div class="btn-group" role="group" aria-label="Contest Blind Group">
+                                                            <input type="checkbox" class="btn-check" name="blind_checkbox" id="blind_1" onclick="explore.active_left('blind_1','blind_2')" autocomplete="off">
+                                                            <label class="btn btn-outline-primary" for="blind_1"><i class="bi bi-eye"></i></label>
+                                                          
+                                                            <input type="checkbox" class="btn-check" name="blind_checkbox" id="blind_2" onclick="explore.active_right('blind_1','blind_2')" autocomplete="off">
+                                                            <label class="btn btn-outline-primary" for="blind_2"><i class="bi bi-eye-slash"></i></label>
+                                                          </div>
+                                                        <p class="help-block text-center">Blind</p>
+                                                    </div>
+                                                    <div class="btn-group-with-label">
+                                                        <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+                                                            <input type="checkbox" class="btn-check" name="prepay_checkbox" id="prepaid_1" onclick="explore.active_left('prepaid_1','prepaid_2')" autocomplete="off">
+                                                            <label class="btn btn-outline-primary prepay" for="prepaid_1"><i class="fas fa-certificate cert"></i><i class="bi bi-currency-dollar dollar"></i></label>
+                                                          
+                                                            <input type="checkbox" class="btn-check" name="prepay_checkbox" id="prepaid_2" onclick="explore.active_right('prepaid_1','prepaid_2')" autocomplete="off">
+                                                            <label class="btn btn-outline-primary prepay" for="prepaid_2"><i class="fas fa-certificate cert"></i><i class="bi bi-currency-dollar dollar"></i><i class="bi bi-slash-lg slash"></i></label>
+                                                          </div>
+                                                        <p class="help-block text-center">Guaranteed</p>
+                                                    </div>
+                                                    <div class="btn-group-with-label">
+                                                        <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+                                                            <input type="checkbox" class="btn-check" name="feature_checkbox" id="featured_1" onclick="explore.active_left('featured_1','featured_2')" autocomplete="off">
+                                                            <label class="btn btn-outline-primary feature" for="featured_1"><i class="bi bi-star-fill"></i></label>
+                                                          
+                                                            <input type="checkbox" class="btn-check" name="feature_checkbox" id="featured_2" onclick="explore.active_right('featured_1','featured_2')" autocomplete="off">
+                                                            <label class="btn btn-outline-primary feature" for="featured_2"><i class="bi bi-star-fill"></i><i class="bi bi-slash-lg slash"></i></label>
+                                                        </div>
+                                                        <p class="help-block text-center">Featured</p>
+                                                    </div>
+                                                </div>
+                                            </div><!-- .form-group -->
+                                        </div><!-- .col-filter -->
+                                        
+                                        <div class="col-filter col-filter-days">
+                                            <label for="">Days left</label>
+                                            <div>
+                                                <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                                    <input type="radio" class="btn-check" name="days_radion" id="days_1" autocomplete="off" disabled>
+                                                    <label class="btn btn-outline-primary" for="days_1"><i class="bi bi-chevron-left left"></i>1</label>
+                                                  
+                                                    <input type="radio" class="btn-check" name="days_radion" id="days_2" autocomplete="off" disabled>
+                                                    <label class="btn btn-outline-primary" for="days_2">1-3</label>
+                                                  
+                                                    <input type="radio" class="btn-check" name="days_radion" id="days_3" autocomplete="off" disabled>
+                                                    <label class="btn btn-outline-primary" for="days_3">4-7</label>
+                                                    <input type="radio" class="btn-check" name="days_radion" id="days_4" autocomplete="off" disabled>
+                                                    <label class="btn btn-outline-primary" for="days_4">7+</label>
+                                                </div>        
+                                            </div>
+                                        </div><!-- .col-filter -->
+                
+                                        <div class="col-filter col-filter-prize">
+                                            <div class="form-group clearfix">
+                                                <label for="inputPrizeMin">Prize</label>
+                                                <div class="prize-inputs-wrap d-md-flex">
+                                                    <div class="col-prize">
+                                                        <div class="input-with-icon">
+                                                            <input class="form-control" id="inputPrizeMin" value="" placeholder="Min" autocomplete="off" type="text" pattern="[0-9]*" data-default="">
+                                                            <i class="input-icon icon-subtle bi bi-currency-dollar hidden-xs"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-prize">
+                                                        <div class="input-with-icon">
+                                                            <input class="form-control" id="inputPrizeMax" value="" placeholder="Max" autocomplete="off" type="text" pattern="[0-9]*" data-default="">
+                                                            <i class="input-icon icon-subtle bi bi-currency-dollar hidden-xs"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div><!-- .form-group -->
+                                        </div><!-- .col-filter -->
+                                    </div><!-- .row-filters -->
+                
+                                    <div class="filter-buttons">
+                                        <a href="" id="btnClearFilters" class="btn btn-link btn-clear-filters"><i class="icon-clear fas fa-times-circle"></i>Clear all filters</a>
+                                    </div>
+                                </div><!-- .content-box-section -->
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="container">
+                <div class="contest_items">
+                    <div class="contest_item">
+                        <div class="d-sm-flex flex-sm-column">
+                            <div class="contest_image_side">
+                                <div class="contest_item_image">
+                                    <img src="./images/design_1.png" class="img-fluid" alt="logo_design1" />
+                                </div>
+                                <div class="contest_item_price">
+                                    $299
+                                </div>                                    
+                            </div>
+                            <div class="description_side">
+                                <div class="row">
+                                    <div class="contest_description col-lg-9 col-md-12 col-sm-12">
+                                        <div>
+                                            <h6 class="category_description">Brand new salon in a upscale area looking to be amazed</h6>
+                                            <ul class="category">
+                                                <li>
+                                                    <div class="guaranteed">
+                                                        <i class="fas fa-certificate cert"></i><i class="bi bi-currency-dollar dollar"></i> Guaranteed
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="blind"><i class="bi bi-eye-slash"></i> Blind</div>
+                                                </li>
+                                            </ul>    
+                                        </div>
+                                        <p class="detail">I want something clean and upscale, I like the idea of very monochromatic tone
+                                            but open to some netutral colors. I want something that stands out and ...
+                                        </p>
+                                        <p class="designer">by Gabriel Molocea</p>
+                                        <div class="contest_category">
+                                            <ul>
+                                                <li>
+                                                    <div class="logo_design_category">Logo design</div>                                                        
+                                                </li>
+                                                <li>
+                                                    <div class="technology_category">Technology</div>                                                            
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="properties col-lg-3 col-md-12 col-sm-12">
+                                        <ul class="contest_properties">
+                                            <li class="design_count">
+                                                <div class="contest_design_count">
+                                                    26 designs
+                                                </div>        
+                                            </li>
+                                            <li class="design_time">
+                                                <div class="contest_design_time">
+                                                    ended
+                                                </div>                                                            
+                                            </li>
+                                            <li class="design_feedback">
+                                                <div class="contest_design_feedback">
+                                                    15% feedback (32)
+                                                </div>                                                            
+                                            </li>
+                                        </ul>
+                                    </div>    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contest_item">
+                        <div class="d-sm-flex flex-sm-column">
+                            <div class="contest_image_side">
+                                <div class="contest_item_image">
+                                    <img src="./images/design_1.png" class="img-fluid" alt="logo_design1" />
+                                </div>
+                                <div class="contest_item_price">
+                                    $299
+                                </div>                                    
+                            </div>
+                            <div class="description_side">
+                                <div class="row">
+                                    <div class="contest_description col-lg-9 col-md-12 col-sm-12">
+                                        <h6>Brand new salon in a upscale area looking to be amazed</h6>
+                                        <p class="detail">I want something clean and upscale, I like the idea of very monochromatic tone
+                                            but open to some netutral colors. I want something that stands out and ...
+                                        </p>
+                                        <p class="designer">by Gabriel Molocea</p>
+                                        <div class="contest_category">
+                                            <ul>
+                                                <li>
+                                                    <div class="logo_design_category">Logo design</div>                                                        
+                                                </li>
+                                                <li>
+                                                    <div class="technology_category">Technology</div>                                                            
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="properties col-lg-3 col-md-12 col-sm-12">
+                                        <ul class="contest_properties">
+                                            <li class="design_count">
+                                                <div class="contest_design_count">
+                                                    26 designs
+                                                </div>        
+                                            </li>
+                                            <li class="design_time">
+                                                <div class="contest_design_time">
+                                                    ended
+                                                </div>                                                            
+                                            </li>
+                                            <li class="design_feedback">
+                                                <div class="contest_design_feedback">
+                                                    15% feedback (32)
+                                                </div>                                                            
+                                            </li>
+                                        </ul>
+                                    </div>    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contest_item">
+                        <div class="d-sm-flex flex-sm-column">
+                            <div class="contest_image_side">
+                                <div class="contest_item_image">
+                                    <img src="./images/design_1.png" class="img-fluid" alt="logo_design1" />
+                                </div>
+                                <div class="contest_item_price">
+                                    $299
+                                </div>                                    
+                            </div>
+                            <div class="description_side">
+                                <div class="row">
+                                    <div class="contest_description col-lg-9 col-md-12 col-sm-12">
+                                        <h6>Brand new salon in a upscale area looking to be amazed</h6>
+                                        <p class="detail">I want something clean and upscale, I like the idea of very monochromatic tone
+                                            but open to some netutral colors. I want something that stands out and ...
+                                        </p>
+                                        <p class="designer">by Gabriel Molocea</p>
+                                        <div class="contest_category">
+                                            <ul>
+                                                <li>
+                                                    <div class="logo_design_category">Logo design</div>                                                        
+                                                </li>
+                                                <li>
+                                                    <div class="technology_category">Technology</div>                                                            
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="properties col-lg-3 col-md-12 col-sm-12">
+                                        <ul class="contest_properties">
+                                            <li class="design_count">
+                                                <div class="contest_design_count">
+                                                    26 designs
+                                                </div>        
+                                            </li>
+                                            <li class="design_time">
+                                                <div class="contest_design_time">
+                                                    ended
+                                                </div>                                                            
+                                            </li>
+                                            <li class="design_feedback">
+                                                <div class="contest_design_feedback">
+                                                    15% feedback (32)
+                                                </div>                                                            
+                                            </li>
+                                        </ul>
+                                    </div>    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contest_item">
+                        <div class="d-sm-flex flex-sm-column">
+                            <div class="contest_image_side">
+                                <div class="contest_item_image">
+                                    <img src="./images/design_1.png" class="img-fluid" alt="logo_design1" />
+                                </div>
+                                <div class="contest_item_price">
+                                    $299
+                                </div>                                    
+                            </div>
+                            <div class="description_side">
+                                <div class="row">
+                                    <div class="contest_description col-lg-9 col-md-12 col-sm-12">
+                                        <h6>Brand new salon in a upscale area looking to be amazed</h6>
+                                        <p class="detail">I want something clean and upscale, I like the idea of very monochromatic tone
+                                            but open to some netutral colors. I want something that stands out and ...
+                                        </p>
+                                        <p class="designer">by Gabriel Molocea</p>
+                                        <div class="contest_category">
+                                            <ul>
+                                                <li>
+                                                    <div class="logo_design_category">Logo design</div>                                                        
+                                                </li>
+                                                <li>
+                                                    <div class="technology_category">Technology</div>                                                            
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="properties col-lg-3 col-md-12 col-sm-12">
+                                        <ul class="contest_properties">
+                                            <li class="design_count">
+                                                <div class="contest_design_count">
+                                                    26 designs
+                                                </div>        
+                                            </li>
+                                            <li class="design_time">
+                                                <div class="contest_design_time">
+                                                    3 days, 19 hours
+                                                </div>                                                            
+                                            </li>
+                                            <li class="design_feedback">
+                                                <div class="contest_design_feedback">
+                                                    15% feedback (32)
+                                                </div>                                                            
+                                            </li>
+                                        </ul>
+                                    </div>    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contest_item">
+                        <div class="d-sm-flex flex-sm-column">
+                            <div class="contest_image_side">
+                                <div class="contest_item_image">
+                                    <img src="./images/design_1.png" class="img-fluid" alt="logo_design1" />
+                                </div>
+                                <div class="contest_item_price">
+                                    $299
+                                </div>                                    
+                            </div>
+                            <div class="description_side">
+                                <div class="row">
+                                    <div class="contest_description col-lg-9 col-md-12 col-sm-12">
+                                        <h6>Brand new salon in a upscale area looking to be amazed</h6>
+                                        <p class="detail">I want something clean and upscale, I like the idea of very monochromatic tone
+                                            but open to some netutral colors. I want something that stands out and ...
+                                        </p>
+                                        <p class="designer">by Gabriel Molocea</p>
+                                        <div class="contest_category">
+                                            <ul>
+                                                <li>
+                                                    <div class="logo_design_category">Logo design</div>                                                        
+                                                </li>
+                                                <li>
+                                                    <div class="technology_category">Technology</div>                                                            
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="properties col-lg-3 col-md-12 col-sm-12">
+                                        <ul class="contest_properties">
+                                            <li class="design_count">
+                                                <div class="contest_design_count">
+                                                    26 designs
+                                                </div>        
+                                            </li>
+                                            <li class="design_time">
+                                                <div class="contest_design_time">
+                                                    3 days, 19 hours
+                                                </div>                                                            
+                                            </li>
+                                            <li class="design_feedback">
+                                                <div class="contest_design_feedback">
+                                                    15% feedback (32)
+                                                </div>                                                            
+                                            </li>
+                                        </ul>
+                                    </div>    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <nav aria-label="Page navigation" class="explore_pagination">
+                        <ul class="pagination justify-content-center">
+                          <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous" disabled>
+                              <span aria-hidden="true"><i class="bi bi-caret-left-fill"></i></span>
+                            </a>
+                          </li>
+                          <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                          <li class="page-item"><a class="page-link" href="#">2</a></li>
+                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                          <li class="page-item">...</li>
+                          <li class="page-item"><a class="page-link" href="#">101</a></li>
+                          <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                              <span aria-hidden="true"><i class="bi bi-caret-right-fill"></i></span>
+                            </a>
+                          </li>
+                        </ul>
+                      </nav>
+                </div>
+            </div>
+        </section>
+        
+        <section class="explore_description">
+            <div class="container">
+                <h3>Design contests - tonnes of designs for you to choose from</h3>
+                <p>
+                    Start a design contest today and get desings from 1,014,171 competing designers around the world.
+                    Design contests are the best way to tap into Zignative's massive pool of talented designers and find a design that you'll love.
+                    Whether that be a new logo for your startup or simply a flyer, you're sure to get the perfect design - just start a design contest today.
+                </p>
+            </div>
+        </section>
+    </section>
+    <footer>
+        <div class="footer_contents">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                        <h5>COMPANY</h5>
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Team</a></li>
+                            <li><a href="#">Testimonials</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                        <h5>Design services</h5>
+                        <ul>
+                            <li><a href="#">Design contests</a></li>
+                            <li><a href="#">Find a designer</a></li>
+                            <li><a href="#">Discover inspiration</a></li>
+                            <li><a href="#">Pricing</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                        <h5>Get a design</h5>
+                        <ul>
+                            <li><a href="#">Logo design</a></li>
+                            <li><a href="#">Business card</a></li>
+                            <li><a href="#">Web page design</a></li>
+                            <li><a href="#">T-shirt design</a></li>
+                            <li><a href="#">Browse all categories</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                        <h5>Resources</h5>
+                        <ul>
+                            <li><a href="#">Become a designer</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Logo ideas</a></li>
+                            <li><a href="#">T-shirt ideas</a></li>
+                            <li><a href="#">Help</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-links text-center">
+                    <a href="#"><img src="./images/facebook.png" class="img-fluid" alt="facebook"></a>
+                    <a href="#"><img src="./images/twitter.png" class="img-fluid" alt="twitter"></a>
+                    <a href="#"><img src="./images/in.png" class="img-fluid" alt="in"></a>
+                </div>
+                <p class="text-center certificate">© 2020–2022 Zignative SRL. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>   
+    <script src="./explore.bundle.js"></script>
+    </body>
+    </html>

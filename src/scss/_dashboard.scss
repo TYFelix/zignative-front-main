@@ -1,0 +1,216 @@
+@import '~bootstrap/scss/bootstrap';
+@import "variables";
+@import "dashboard_base";
+@import "notify";
+@import "dashboard_responsive";
+@import "sidebar";
+@import "sidebar_mobile";
+
+body{
+    .top{
+        background-color: #E8EAED;
+        padding: 1.5rem 0;
+        .top-buttons{
+            ul{
+                padding: 0;
+                list-style: none;
+                li{
+                    padding-right: 1.5rem;
+                    .category_card{
+                        color: #282A35; 
+                        background: #fff 0% 0% no-repeat padding-box;
+                        border: 1px solid #E8E8E8;
+                        border-radius: 10px;
+                        opacity: 1;
+                        width: 126px;
+                        height: 143px;
+                        img{
+                            display: block;
+                            width: 57px;
+                            height: 57px;
+                            margin: 1.1rem auto 0.6rem;
+                        }
+                        .card-description{
+                            height: 5rem;
+                            padding: 0 3px;
+                            color: #282A35;
+                        }
+                    }
+                    &:last-child{
+                        .category_card{
+                            background: #FF671D 0% 0% no-repeat padding-box;
+                            border: 1px solid #E8E8E8;
+                            border-radius: 10px;
+                            opacity: 1;
+                            width: 126px;
+                            height: 143px;
+                            .plus{
+                                display: block;
+                                width: 57px;
+                                height: 57px;
+                                font-size: 60px;
+                                margin: 0.3rem auto 1.5rem;
+                                color: #fff;
+                            }
+                            .card-description{
+                                height: 3rem;
+                                padding: 0 3px;
+                                color: #fff;
+                            }
+                        }
+                    }               
+                }
+            }            
+        }
+    }
+    .projects{
+        padding: 1.5rem 0 0 0;
+        .projects-header{
+            .projects-buttons{
+                .btn-outline-primary{
+                    color: black;
+                    border-color: #707070;
+                    &:hover{
+                        background-color: #D5EAF9 !important;
+                    }
+                }
+                .btn-check:checked+.btn-outline-primary{
+                    background-color: #D5EAF9 !important;
+                }
+            }
+        }
+        .projects-content{
+            margin-top: 2rem;
+            .contest_item{
+                position: relative;
+                padding: 2rem 0;
+                border-top: 1px solid #E7E9EB;
+                &:last-child{
+                    border-bottom: 1px solid #E7E9EB;
+                }
+                .contest_image_side{
+                    .contest_item_image{
+                        position: relative;
+                        img{
+                            width: 120px;
+                        }
+                        .contest_item_price{
+                            position: absolute;
+                            text-align: center;
+                            padding: 0.1rem 0 0.1rem 0;
+                            color: white;
+                            border: 2px solid #707070;
+                            background-color: #111317;
+                            width: 4rem;
+                            top: 0;
+                            left: 0;
+                        }    
+                    }
+                }
+                .description_side{
+                    width: 100%;
+                    position: absolute;
+                    .contest_description{
+                        margin-left: 150px;
+                        h6{
+                            display: inline-block;
+                        }
+                        p{
+                            margin-bottom: 0.6rem;
+                        }
+                        .contest_count{
+                            color: white;
+                            border-radius: 50%;
+                            background-color: #FF671D;
+                            padding: 0.2rem;
+                        }
+                        .avatars{
+                            position: relative;
+                            height: 24px;
+                            padding: 1rem 0;
+                            img{
+                                width: 24px;
+                                height: 24px;
+                                border-radius: 50%;
+                            }
+                            .avatar1{
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                            }
+                            .avatar2{
+                                position: absolute;
+                                top: 0;
+                                left: 15px;
+                            }
+                            .avatar3{
+                                position: absolute;
+                                top: 0;
+                                left: 30px;
+                            }
+                            .avatar4{
+                                position: absolute;
+                                top: 0;
+                                left: 45px;
+                            }
+                            .avatar5{
+                                position: absolute;
+                                top: 0;
+                                left: 60px;
+                            }
+                            .avatar_description{
+                                position: absolute;
+                                top: 0;
+                                left: 90px;
+                            }
+                        }
+                    }
+                    .contest_properties{
+                        button{
+                            margin-left: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+        .projects-footer{
+            text-align: center;
+            img{
+                display: inline-block;
+            }
+            .footer-description{
+                color: black;
+                display: inline-block;
+                padding-left: 2rem;
+                vertical-align: middle;
+                text-align: left;
+                ul{
+                    list-style: none;
+                }
+            
+                ul.description_content{
+                    padding: 0;
+                    li{
+                        position: relative;
+                        padding-left: 2rem;
+                        &::before{
+                            content: "";
+                            mask-image:  $check_icon_url; 
+                            -webkit-mask-image: $check_icon_url;
+                            background-color: black;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 24px;
+                            height: 24px;
+                            -webkit-mask-size: 24px 24px;
+                            -webkit-mask-repeat: no-repeat;
+                            mask-size: 24px 24px;
+                            mask-repeat: no-repeat;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

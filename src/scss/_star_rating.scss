@@ -1,0 +1,95 @@
+.star-rating {
+    display: inline-block;
+    .star-rating__star {
+        text-align: left;
+        display: inline-block;
+        position: relative;
+        width: 16px;
+        height: 16px;
+        padding-right: 1.3rem;
+        &:first-child{
+            margin-left: 0 !important;
+        }
+        &::before{
+            content: "" !important;
+            position: absolute;
+            -webkit-mask-image: $star_icon_url;
+            mask-image: $star_icon_url;
+            width: 16px;
+            height: 16px;
+            background-color:#969694;
+            font-size: 100%;
+            line-height: 1;
+            text-align: left;
+        }
+    }
+    .star-rating__star__icon {
+        height: 100%;
+        position: absolute;
+        color: #fe5f50;
+        overflow: hidden;
+        margin: 0;
+        text-align: left;
+        font-size: 100%;
+        line-height: 1;
+        &::before{
+            content: "" !important;
+            -webkit-mask-image: $star_icon_url;
+            mask-image: $star_icon_url;
+            width: 16px;
+            height: 16px;
+            background-color:$link-color;
+            display: block !important;
+            margin: 0;
+        }
+    }
+    .star-rating--small{
+        .star-rating__star{
+            width: 19px;
+            height: 19px;
+            margin-left: 3px;
+            font-size: 19px;
+            &:first-child{
+                margin-left: 0;
+            }    
+        }
+    }
+    .star-rating--large{
+        .star-rating__star {
+            width: 30px;
+            height: 30px;
+            margin-left: 15px;
+            font-size: 30px;
+        }
+        &:first-child{
+            margin-left: 0;
+        }
+    }
+        
+    .star-rating--chameleon{
+        .star-rating__star__icon {
+            color: currentColor;
+        }    
+    } 
+
+    .star-rating--grey800 {
+        .star-rating__star__icon {
+            color: #313030;
+        }
+    }    
+}
+
+@media (min-width: 0) and (max-width: 599px) {
+    .star-rating--small-no-margin {
+        .star-rating__star {
+            margin-left: 0;
+        }
+    }
+    .star-rating--small-shrink{
+        .star-rating__star {
+            width: 12px;
+            height: 12px;
+            font-size: 12px;
+        }
+    } 
+}

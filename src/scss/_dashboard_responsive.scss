@@ -1,0 +1,612 @@
+@media(max-width:400px){
+    .header{
+        .header_img{
+            font-size: 15px !important;
+            i{
+                font-size: 15px !important;
+            }
+        }
+    }
+    .projects{
+        .projects-content{
+            .description_side{
+                .avatars{
+                    .avatar_description{
+                        left: 0 !important;
+                        top: 25px !important;
+                    }   
+                }
+                .detail_link{
+                    padding-top: 1rem;
+                }
+            }
+        }
+    }
+    #contest{
+        .contest-mainbody{
+            .contest-tabs{
+                #contestTab{
+                    li{
+                        padding-right: 0.7rem !important;
+                        &:last-child{
+                            padding-right: 0 !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width:440px){
+    #contest{
+        .contest-progress{
+            span{
+                &:last-child{
+                    margin-left: 0;
+                    margin-top: 0.5rem;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:530px){
+    .navbar-default .dropdown-menu.notify-drop {
+        min-width: 300px !important;
+    }
+    .header{
+        .header_img{
+            font-size: 16px !important;
+            i{
+                font-size: 18px !important;
+            }
+        }
+    }
+    .projects{
+        .projects-header{
+            .projects-buttons{
+                .btn-group{
+                    display: flex !important;
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+    #contest{
+        .contest-mainbody{
+            .contest-tabs{
+                #contestTab{
+                    li{
+                        padding-right: 1.5rem;
+                    }
+                }
+            }
+        }
+        .tab-messages{
+            padding: 0 !important;
+            .messages{
+                .message{
+                    .avatar_name{
+                        .time{
+                            padding: 0;
+                        }
+                    }
+                    .message_body{
+                        padding-top:1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width: 600px){
+    #contest{
+        .contest-mainbody{
+            .tab-content{
+                .design-product{
+                    width: 100% !important;
+                    padding-right: 0 !important;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width:767px){
+    .header{
+        .header_toggle{
+            .header_links{
+                .how_it_works, .pricing{
+                    display: none;
+                }
+            }
+        }
+        .header_img{
+            .notify-drop{
+                margin-right: -100px !important;
+            }
+            .navbar-item{
+                padding-left: 0.5rem;
+                .nav-link{
+                    padding: 0;
+                    
+                    .header_avatar{
+                        width: 24px;
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+    }
+    .l-navbar{
+        padding: 0 !important;
+    }
+    .show {
+        left: 0;
+        .nav_list{
+            .nav_link{
+                height: 60px;
+                .nav_name{
+                    opacity: 0% !important;
+                }    
+            }
+        }
+    }
+    .content_body{
+        padding-top: 1rem;
+        .top{
+            .top-buttons{
+                overflow-y: hidden;
+                overflow-x: scroll;
+            }
+        }
+        .projects{
+            .projects-header{
+                .start_contest{
+                    padding-top: 1rem;
+                    .btn-contest{
+                        width: 100%;
+                    }
+                }
+            }
+            .projects-content{
+                margin-top: 0 !important
+                ; 
+                padding: 2.5rem 0;
+                .contest_item{
+                    padding: 2rem 0 2rem 0;
+                    border-bottom: none;
+                    .contest_image_side{
+                        width: 100%;
+                        position: relative;
+                        .contest_item_image{
+                            img{
+                                width: 100% !important;
+                            }
+                        }
+                    }
+                    .description_side{
+                        margin: 1rem 0 0;
+                        position: relative !important;
+                        .contest_description{
+                            width: 100%;
+                            margin-left: 0 !important;
+                            .category{
+                                padding: 0 0 0.5rem !important;
+                            }
+                        }
+                        .properties{
+                            position: relative;
+                            border-bottom: none;
+                            .contest_properties{
+                                margin-top: 0.5rem;
+                                button{
+                                    margin-left: 0;
+                                    margin-right: 0.5rem;
+                                }
+                            }
+                        }
+                    }		
+                }
+            }
+            .projects-footer{
+                .footer-description{
+                    padding: 1rem 0 0;
+                }
+            }
+        }
+    }
+    #contest{
+        .contest-header{
+            .header-buttons{
+                justify-content: flex-start;
+            }
+        }
+        .contest-mainbody{
+            .contest-tabs{
+                .manage-products{
+                    position: relative;
+                    padding-bottom: 2rem;
+                }
+                .design-product{
+                    width: 100% !important;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+            .tab-content{
+                .tab-products{
+                    .design-contents{
+                        .designer-dropdown, .align-dropdown{
+                            position: initial !important;
+                            padding-top: 1rem;
+                            width: 50%;
+                            display: inline-block;
+                        }
+                        .designer-dropdown{
+                            padding-right: 1rem;
+                        }
+                    }
+                }
+            }
+            .tab-settings{
+                .brief_contents{
+                    .brief_references{
+                        .attach_project{
+                            .attach_project_image{
+                                width: 100%;
+                                position: initial !important;
+                                img{
+                                    width: 100%;
+                                }
+                            }
+                            .attach_project_description{
+                                margin-left: 0;
+                                padding-top: 1rem;
+                            }
+                        }
+                    }
+                }
+                .brief_visual{
+                    .brief_visual_contents{
+                        .range_left{
+                            width: 12rem;
+                        }
+                        .range_body{
+                            padding-right: 0.5rem !important;
+                        }
+                        .range_right{
+                            width: 15rem;
+                        }
+                    }
+                }
+                .brief_inspiration{
+                    .brief_projects{
+                        .brief_project{
+                            padding-bottom: 1rem;
+                            width: 100%;
+                            img{
+                                width: 100%;
+                            }
+                            button{
+                                bottom: 3rem;
+                            }
+                        }
+                    }
+                }
+            }
+            .tab-messages{
+                padding: 0 3rem;
+            }
+        }
+    }
+    #profile{
+        .profile-header{
+            .profile-header-button{
+                position: relative !important;
+                top: 1rem !important;
+            }        
+        }
+        .tab-edit-image{
+            align-items: flex-start !important;
+            .tab-profile-buttons{
+                button{
+                    margin-bottom: 1rem;
+                }
+            }    
+        }
+        #profileTab{
+            display: flex !important;
+            margin-bottom: 2rem;
+        }
+    }
+    .dashboard_footer{
+        .footer_items{
+            text-align:center;
+            .contest_footer_zignative, .contest_footer_terms{
+                padding-bottom: 1rem;
+            }
+            .contest_footer_terms{
+                .footer_terms{
+                    padding-right: 2rem !important;
+                }
+            }
+            .contest_footer_links{
+                i{
+                    font-size: 24px;
+                    padding-left: 2rem;
+                    &:first-child{
+                        padding-left: 0 !important;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media (min-width:767px) and (max-width:992px){
+    .projects{
+        .projects-header{
+            .start_contest{
+                padding-top: 1rem;
+            }
+        }
+        .contest-items{
+            .contest_item{
+                height: 14rem !important;
+                .description_side{
+                    .contest_properties{
+                        margin-left: 150px;
+                        button{
+                            margin: 0.5rem 0.5rem 0 0 !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:767px) and (max-width:1024px){
+    .top{
+        .top-buttons{
+            overflow-y: hidden;
+            overflow-x: scroll;
+        }
+    }
+    .projects{
+        .projects-footer{
+            .footer-description{
+                padding: 1rem 0 0;
+            }
+        }
+    }
+    #contest{
+        .contest-header{
+            .header-buttons{
+                justify-content: flex-start;
+            }
+        }
+        .contest-mainbody{
+            .contest-tabs{
+                .manage-products{
+                    position: relative;
+                    padding-bottom: 2rem;
+                }
+            }
+            .tab-content{
+                .tab-products{
+                    .design-contents{
+                        .designer-dropdown, .align-dropdown{
+                            position: initial !important;
+                            padding: 1rem 1rem 0 0;
+                            width: 50%;
+                            display: inline-block;
+                        }
+                    }
+                }
+            }
+        }
+        .tab-messages{
+            padding: 0 5rem !important;
+        }
+    }
+    .dashboard_footer{
+        .footer_items{
+            text-align:center;
+            display: block !important;
+            .contest_footer_zignative, .contest_footer_terms{
+                padding-bottom: 1rem;
+            }
+            .contest_footer_terms{
+                .footer_terms{
+                    padding-right: 2rem !important;
+                }
+            }
+            .contest_footer_links{
+                i{
+                    font-size: 24px;
+                    padding-left: 2rem;
+                    &:first-child{
+                        padding-left: 0 !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:767px) and (max-width:1650px){
+    .top, .projects{
+        padding-left: 2rem !important;
+    }
+    #contest{
+        .tab-messages{
+            padding: 0 10rem;
+        }
+    }
+    .dashboard-footer{
+        .footer_items{
+            .contest_footer_links{
+                i{
+                    font-size: 24px;
+                    padding-left: 2rem;
+                    &:first-child{
+                        padding-left: 3rem;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width:1024px) and (max-width:1590px){
+    #contest{
+        .contest-mainbody{
+            .tab-content{
+                .tab-products{
+                    .design-contents{
+                        .designer-dropdown{
+                            position: initial !important;
+                            padding: 1rem 0 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .dashboard_footer{
+        .footer_items{
+            padding: 1rem !important;
+            .contest_footer_terms{
+                .footer_terms{
+                    padding-right: 1rem;
+                }
+            }
+            .contest_footer_links i:first-child {
+                padding-left: 1rem !important;
+            }
+        }
+    }
+}
+@media (min-width: 768px) and (max-width:819px){
+    #contest{
+        .contest-mainbody{
+            .brief_project{
+                width: 50% !important;
+                img{
+                    width: 100%;
+                }   
+            }
+        }
+    }
+}
+@media (min-width: 819px) and (max-width:992px){
+    #contest{
+        .contest-mainbody{
+            .brief_project{
+                width: 33.333% !important;
+                img{
+                    width: 100%;
+                }   
+            }
+        }
+    }
+}
+@media (min-width: 768px) and (max-width:1075px){
+    #contest{
+        .contest-mainbody{
+            .design-product{
+                width: 48% !important;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 1075px) and (max-width:1330px){
+    #contest{
+        .contest-mainbody{
+            .design-product{
+                width: 31% !important;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 1350px) and (max-width:1590px){
+    #contest{
+        .contest-mainbody{
+            .design-product{
+                width: 23% !important;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 992px) and (max-width:1160px){
+    #contest{
+        .contest-mainbody{
+            .brief_project{
+                width: 100% !important;
+                img{
+                    width: 100%;
+                }   
+            }
+
+            .brief_visual{
+                .brief_visual_contents{
+                    .slider_right_label{
+                        padding-left: 0rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1160px) and (max-width:1590px){
+    #contest{
+        .contest-mainbody{
+            .brief_project{
+                width: 50% !important;
+                img{
+                    width: 100%;
+                }   
+            }
+            .brief_visual{
+                .brief_visual_contents{
+                    .slider_right_label{
+                        padding-left: 2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 1590px){
+    #contest{
+        .contest-mainbody{
+            .design-product{
+                width: 18% !important;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }   
+}
+@media (max-width: 1650px){
+    #contest{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}

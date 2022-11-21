@@ -1,0 +1,38 @@
+footer{
+    background-color: #EFEFEF;
+    color: #111317;
+    h5{
+        font-size: 18px;
+    }
+    .footer_contents{
+        h5{
+            font-weight: 700;
+        }
+        padding-top: 3.75rem;
+        ul{
+            padding-top: 3.75rem;
+            list-style-type: none;
+            display: contents;
+            li{
+                font-weight: 500;
+                padding-top: 0.5rem;
+                a{
+                    color: $description-color;
+                }
+            }
+        }
+        .footer-links{
+            margin-top: 3.75rem;
+            a{
+                padding: 0 1.25rem 0 1.25rem;
+            }
+        }
+        .certificate{
+            font-size: 14px;
+            font-weight: 500;
+            padding: 2.5rem 0;
+            color: $description-color;
+            margin-block-end: 0 !important;
+        }
+    }
+}

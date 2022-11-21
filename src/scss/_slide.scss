@@ -1,0 +1,22 @@
+// slider style
+.splide {
+    .splide__pagination {
+        margin-top: 1.75rem;
+        bottom: auto;
+        .is-active {
+            background-color:$link-color;
+            transform: scale(1.1);
+        }
+    }
+    .splide__arrows {
+        svg{
+            fill: $link-color;
+        }
+        .splide__arrow--prev {
+            background: transparent;
+        }
+        .splide__arrow--next {
+            background: transparent;
+        }
+    }
+}

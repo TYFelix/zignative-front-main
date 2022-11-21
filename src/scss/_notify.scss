@@ -1,0 +1,119 @@
+.navbar-default .dropdown-menu.notify-drop {
+    min-width: 400px;
+    background-color: #fff;
+    transform: translate(-140px, 40px) !important;
+    border-radius: 7px;
+    &.no-notification{
+      min-height: 280px;
+      max-height: 280px;
+      .drop-content.no-content{
+        min-height: 180px;
+        max-height: 180px;
+        padding: 3rem 0 2rem;
+        svg{
+          margin: 0 0 1rem;
+        }
+      }
+    }
+    &.collapsed-notification{
+      min-height: 430px;
+      max-height: 430px;
+      .drop-content.collapsed-content{
+        min-height: 330px;
+        max-height: 330px;
+      }
+    }
+    .notify-drop-title{
+      border-bottom: 1px solid #e2e2e2;
+      padding: 5px 15px 10px 15px;  
+    }
+    .drop-content{
+      overflow-y: scroll;
+      &::-webkit-scrollbar-track{
+        background-color: #F5F5F5;
+      }
+      &::-webkit-scrollbar{
+        width: 8px;
+        background-color: #F5F5F5;    
+      }
+      &::-webkit-scrollbar-thumb{
+        background-color: #ccc;
+      }
+      .pd-10{
+        padding-left: 0;
+      }
+    }
+    .drop-content > li {
+      border-bottom: 1px solid #e2e2e2;
+      padding: 1rem 0;
+      font-weight: bold;
+      font-size: 11px;
+      &:after{
+        content: "";
+        clear: both;
+        display: block;
+      }
+      &:hover{
+        background-color: #fcfcfc;
+      }
+      &:last-child{
+        border-bottom: none;
+      }
+      .notify-img{
+        float: left;
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        margin: 0px 0px 8px 0px;
+      }
+      .notify-description{
+        padding: 0 0.5rem 0 3.3rem;
+        a{
+          color: #3D3D4E;
+          font-size: 16px;
+          font-weight: normal;
+        }
+        p{
+          font-size: 16px;
+          color: #3D3D4E;
+          font-weight: normal;
+          margin: 3px 0;
+          &.time{
+            font-size: 15px;
+            font-weight: 600;
+            top: 0;
+            margin: 0;
+            padding: 0;
+            color: #6E6D7A;
+          }
+        }          
+      }
+      hr{
+        margin: 5px 0;
+        width: 70%;
+        border-color: #e2e2e2;
+      }
+    }
+    .allRead{
+      margin-right: 7px;
+    }
+    .rIcon{
+      float: right;
+      color: #999;
+      &:hover{
+        color: #333;
+      }
+    }
+    .notify-drop-footer{
+      border-top: 1px solid #e2e2e2;
+      bottom: 0;
+      position: relative;
+      padding: 8px 15px;
+      a{
+        color: #777;
+        text-decoration: none;
+        &:hover{
+          color: #333;
+        }
+      }
+    }
+  }

@@ -1,0 +1,244 @@
+#explore{
+    .current_url{
+        margin-left: -3rem;
+        ul{
+            li{
+                display: inline-block;
+                text-decoration: none;
+                padding-right: 1rem;
+                &::before{
+                    content: "/";
+                    padding-right: 1rem;
+                    color: $primary;
+                }
+                &:first-child::before{
+                    content: "";
+                }
+                &:last-child{
+                    color: #C3C3E5;
+                }
+            }
+        }
+    }
+    .btn-check:checked + .btn-outline-primary{
+        background-color: #ddd !important;
+        //box-shadow: inset 0 2px 2px rgb(0, 0, 0 / 2%) !important;
+    }
+}
+
+section.explore_header{
+    color: $primary !important;
+    background-color: #20204F;
+    .content{
+        align-items: center;
+        .description{
+            h1{
+                color: $primary !important;        
+            }
+        }    
+    }
+}
+
+section.explore_filter_list{
+    color: $h-font-color;
+    .form-control:hover, .form-control:active,
+    .form-select:hover, .form-select:active
+    {
+        border: 1px solid #7D7D7D !important;
+    }
+    .explore_accordion{
+        background-color: #F2F5FA;
+        color: $h-font-color;
+        padding: 2.5rem 0;
+        .search_btn{
+            color: $primary;
+            background-color: #D41367;
+        }
+        .filter_contents{
+            .col-filter-types{
+                .btn-group-with-label{
+                    .prepay{
+                        position: relative;
+                        i.cert{
+                            font-size: 20px;
+                        }
+                        i.dollar{
+                            position: absolute;
+                            top: 6px;
+                            left: 16px;
+                            font-size: 12px;
+                            color: $primary;
+                        }
+                        i.slash{
+                            position: absolute;
+                            top: 7px;
+                            left: 15px;
+                            font-weight: bold;
+                            text-shadow: 1px 0 0 #666;
+                            transform: scale(1.8,1.8) translate(-1px,0);
+                            color: #fff !important;
+                            font-size: 13px;
+                        }    
+                    }
+                    .feature{
+                        position: relative;
+                        i.slash{
+                            position: absolute;
+                            top: 9px;
+                            left: 13px;
+                            font-weight: bold;
+                            text-shadow: 1px 0 0 #666;
+                            transform: scale(1.8,1.8) translate(-1px,0);
+                            color: #fff !important;
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+            .col-filter-prize{
+                .input-with-icon{
+                    position: relative;
+                    input{
+                        padding-left: 1.5rem;
+                    }
+                    i{
+                        position: absolute;
+                        top: 7px;
+                        left: 6px;
+                    }
+                }
+            }
+            .col-filter-days{
+                .btn-group{
+                    &:hover, &:active{
+                        cursor: not-allowed !important;
+                    }
+                }
+            }
+            .btn-outline-primary{
+                background-color: $primary;
+                color: $h-font-color !important;
+                border-color: #ccc !important;
+            }
+            .btn-group-with-label{
+                margin-right: 1rem;
+            }
+            .left{
+                font-size: 11px !important;
+            }
+            .prize-inputs-wrap{
+                max-width: 200px;
+            }
+        }
+    }
+    .contest_items{
+        .contest_item{
+            position: relative;
+            padding-bottom: 50px !important;
+            padding: 2.5rem 0 0 0;
+            border-bottom: 1px solid #E7E9EB;
+            .contest_image_side{
+                position: absolute;
+            }
+            .description_side{
+                .contest_description{
+                    .category_description{
+                        display: inline-block;
+                    }
+                    .category{
+                        padding-left: 1rem !important;
+                        display: inline-block;
+                    }
+                }
+                .contest_properties{
+                    list-style: none;
+                    li{
+                        margin-left: -2rem;
+                    }
+
+                    li.design_count{
+                        &::before{
+                            content: "";
+                            width: 16px !important;
+                            height: 16px !important;
+                            float: left !important;
+                            background-color: black;
+                            margin-right: 0.5rem;
+                            margin-top: 0.2rem;
+                            mask-image:  $contest_design_count_url !important; 
+                            -webkit-mask-image: $contest_design_count_url !important;
+                        }
+                    }
+                    li.design_time{
+                        &::before{
+                            content: "";
+                            width: 16px !important;
+                            height: 16px !important;
+                            float: left !important;
+                            background-color: black;
+                            margin-right: 0.5rem;
+                            margin-top: 0.2rem;
+                            mask-image:  $contest_design_time_url !important; 
+                            -webkit-mask-image: $contest_design_time_url !important;
+                        }                        
+                    }
+                    li.design_feedback{
+                        &::before{
+                            content: "";
+                            width: 16px !important;
+                            height: 16px !important;
+                            float: left !important;
+                            background-color: black;
+                            margin-right: 0.5rem;
+                            margin-top: 0.2rem;
+                            mask-image:  $contest_design_feedback_url !important; 
+                            -webkit-mask-image: $contest_design_feedback_url !important;
+    
+                        }
+                    }
+                }
+                .category{
+                    margin: 0 !important;
+                    li{
+                        text-decoration: none;
+                        list-style: none;
+                        display: inline-block;
+                        padding-right: 1rem;
+                    }
+                }
+                .contest_category{
+                    ul{
+                        margin-left:-2rem;
+                        li{
+                            text-decoration: none;
+                            list-style: none;
+                            display: inline-block;
+                            padding-right: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+        .explore_pagination{
+            padding: 2rem 0 0;
+            .page-item{
+                padding-right: 1rem;
+                a{
+                    color: $h-font-color;
+                    border-color: #707070 !important;
+                    &.active{
+                        opacity: 0.5;
+                    }
+                }
+            }
+        }
+    }
+}
+
+section.explore_description{
+    color: $h-font-color;
+    padding: 2.5rem 0;
+    p{
+        padding: 0 15rem 0 0;
+    }
+}

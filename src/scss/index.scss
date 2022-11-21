@@ -1,0 +1,40 @@
+@import 'variables';
+@import '~bootstrap/scss/bootstrap';
+@import 'header';
+@import 'slide';
+@import 'home';
+@import 'pricing';
+@import 'custom_logo_design';
+@import 'how_it_works';
+@import 'explore';
+@import 'table_cell';
+@import 'common';
+@import 'star_rating';
+@import 'footer';
+@import 'responsive';
+@import url("https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.7.2/font/bootstrap-icons.min.css");
+@import './fontawesome/scss/fontawesome.scss';
+@import './fontawesome/scss/solid.scss';
+
+body{
+	font-family: $font-stack;
+	font-weight: $font-weight;
+	font-size: 16px;
+	color: $primary;
+	h1{
+		font-size: $h1-font-size;
+	}
+	h3{
+		font-size: $h3-font-size;
+	}
+	h5{
+		font-size: $h5-font-size;
+	}
+	h1,h2,h3,h4,h5,h6{
+		color: $h-font-color;
+	}
+	a{
+		text-decoration: none;
+	}
+}
+

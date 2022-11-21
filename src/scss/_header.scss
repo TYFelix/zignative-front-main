@@ -1,0 +1,37 @@
+// header
+header{
+    background-color: #20204F;
+    nav.navbar {
+        a{
+            color:white;
+        }
+        margin: 0 -15px;
+        padding-top: 45px;
+        .navbar-toggler{
+            background-color: white;
+            color: rgba(0,0,0,0.55);
+            border-color: rgba(0,0,0,0.1);
+            .navbar-toggler-icon{
+                background-image: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 30 30%27%3e%3cpath stroke=%27rgba%280,0,0,0.55%29%27 stroke-linecap=%27round%27 stroke-miterlimit=%2710%27 stroke-width=%272%27 d=%27M4 7h22M4 15h22M4 23h22%27/%3e%3c/svg%3e");
+            }
+        }
+        .btn-primary{
+            padding: 12px 25px;
+        }
+        .navbar-nav{
+            align-items: center;
+            .nav-link{
+                padding-right: 1.3rem;
+                padding-left: 1.3rem;
+            }	
+            .dropdown-menu{
+                .dropdown-item{
+                    color: #111317;
+                }
+            }
+        }
+        .sign_in{
+            margin-left: auto;
+        }
+    }
+}

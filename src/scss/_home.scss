@@ -1,0 +1,325 @@
+// section styles
+section.get_design{
+    background-color: #20204F;
+    .description{
+        margin-top: 5.5rem;
+        h1{
+            color: white;
+        }
+        p{
+            font-size: 21px;
+            font-weight: 300;
+        }
+    }
+    .design_authors{
+        padding-left: 104px;
+        a{
+            color:white;
+        }
+        .design_product{
+            float: right;
+            max-width: 22.5rem;
+            margin-top: 60px;
+        }
+        .design_product2{
+            float: right;
+            margin-right: 0 !important;
+            max-width: 180px;
+        }
+        .design_product3{
+            max-width: 160px;
+            margin-top: 70px;
+        }
+        .design_author{
+            a{
+                text-decoration: underline;
+            }
+            text-align:right;
+        }	
+        margin-bottom: 27px;
+    }
+}
+
+section.trusted_by{
+    background-color: #E8EBF0;
+    color: $description-color;
+    p {
+        padding-top: 2.5rem;
+        font-size: 18px;
+        font-weight: 500;
+        font-style: italic;
+    }
+    
+    .trusted_images{
+        padding-top: 2.25rem;
+        padding-bottom: 2.5rem;
+        align-items: center;
+        text-align: left;
+        margin-right: -35px;
+        width: 100%;
+        #trusted-slider{
+            li{
+                text-align: center;
+            }
+            margin-top: 3.75rem;
+            .splide__slide {
+                &.is-active {
+                    border-color: transparent !important;
+                }
+            }
+        }
+    }
+}
+
+section.category_slider{
+    h3{
+        margin-top: 5rem;
+    }
+    #image-slider{
+        margin: 0 -10px;
+        margin-top: 2.5rem;
+        .splide__arrows {
+            .splide__arrow--prev {
+                margin-left: -4rem;
+            }
+            .splide__arrow--next {
+                margin-right: -4rem;
+            }
+        }		
+        .splide__slide {
+            border: 10px solid transparent;
+            .category_card{
+                color: #282A35; 
+                background: #6988BC1A 0% 0% no-repeat padding-box;
+                border: 1px solid #E7E9EB;
+                border-radius: 2px;
+                opacity: 1;
+                // margin-right: 1.2rem;
+                img{
+                    display: block;
+                    width: auto;
+                    margin: 2.2rem auto 1rem;
+                }
+                .card-description{
+                    height: 5rem;
+                    padding: 0 10px;
+                    color: #282A35 !important;
+                }
+            }
+            &.is-active {
+                border-color: transparent !important;
+            }
+        }
+    }
+    .see_categories{
+        margin-top: 5rem;
+        a{
+            color: $link-color;
+        }
+    }
+}
+
+section.divide_line1{
+    margin-top:5rem;
+    img{
+        width: 100%;
+    }
+}
+
+section.inspired_design{
+    margin-top: 3.75rem;
+    color:#111317;
+    .inspired_items{
+        margin-top: 2.5rem;
+    }
+    .inspired_second{
+        margin-top: 1.25rem;
+    }
+    .card{
+        border: none;
+        .card-body{
+            .card-image{
+                width: 306px;
+                height: 262px;
+            }
+        }
+        .card-footer{
+            border: 1px solid #E7E9EB;
+            border-radius: 2px;
+            p{
+                color: $description-color;
+                font-weight: 500;
+            }
+        }
+    }
+    .inspired_buttons{
+        margin-top: 2.5rem;
+        a{
+            display: inline-block;
+            color:$link-color;
+        }
+        p{
+            display: inline-block;
+            font-weight: 500;
+        }
+    }
+}
+
+section.zignative_work{
+    margin-top: 4.5rem;
+    
+    background-color: #F2F5FA;
+    color:#111317;
+    h3{
+        padding-top: 3.75rem;
+    }
+    h6{
+        font-size: 18px;
+    }
+    .work_contents{
+        margin-top: 5rem;
+        .work_description{
+            font-weight: 500;
+            margin-top:1.75rem;
+            margin-bottom: 3.75rem;
+            p{
+                color:$description-color;
+            }
+        }
+    }
+    a{
+        color:$link-color;
+    }
+}
+
+section.zignative_scales{
+    color:#111317;
+    h3{
+        padding-top: 3.75rem;	
+    }
+    h6{
+        font-size: 18px;
+    }
+    .scales_introduce{
+        font-size: 18px;
+        font-style: italic;
+        font-weight: 500;
+    }
+    .scales_contents{
+        margin-top: 3.75rem;
+        button{
+            margin-top: 3.75rem;
+        }
+        .scale{
+            position: relative;
+            .description{
+                p{
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+    p{
+        color:$description-color;
+    }
+    .image{
+        position: absolute;
+        top: 0.5rem;
+        left: 0;
+    }
+    .description{
+        margin-left: 100px;
+    }
+    #scales-slider{
+        color: $link-color;
+        margin: 0 -10px;
+        .splide__pagination {
+            margin-top: auto;
+        }
+    }
+}
+
+section.divide_line2{
+    margin-top:5rem;
+    img{
+        width: 100%;
+    }
+}
+
+section.preferred_reason{
+    padding-top: 3.75rem;
+    color:#111317;
+    #preferred-slider{
+        margin-top: 3.75rem;
+        padding-bottom: 4.5rem !important;
+        .splide__arrow--prev {
+            top: 6.5rem;
+        }
+        .splide__arrow--next {
+            top: 6.5rem;
+        }
+        .splide__slide {
+            .preferred_contents{
+                padding: 0 12rem;
+                .circle_avatar{
+                    width: 160px;
+                    height: 160px;
+                    margin-top: 1rem;
+                    img{
+                        width: 160px;
+                        height: 160px;
+                        border-radius: 50%;
+                    }
+                }
+                .preferred_description{
+                    padding-left: 4rem;
+                    width: calc(100% - 160px);
+                    text-align: left;
+                    .designer_name {
+                        font-weight: 500;
+                        font-style: italic;
+                        font-size: 18px;
+                        color:#111317;
+                    }
+                }
+
+                blockquote {
+                    color: $description-color;
+                    font-size: 24px;
+                    font-weight: 500;
+                    position: relative;
+                }
+                
+                blockquote:before {
+                    color: $description-color;
+                    display: block;
+                    padding-left: 10px;
+                    content: "\201C";
+                    font-size: 80px;
+                    position: absolute;
+                    left: -20px;
+                    top: -20px;
+                }
+                
+                blockquote cite {
+                    font-size: 14px;
+                    display: block;
+                    margin-top: 5px;
+                }
+                
+                blockquote cite:before {
+                    content: "\2021 \2009";
+                }
+                &.is-active {
+                    border-color: transparent !important;
+                }
+            }
+        }
+    }
+    p{
+        color:$description-color;
+        .name{
+            color: #111317;
+        }
+    }
+}

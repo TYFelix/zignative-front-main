@@ -1,0 +1,245 @@
+@import '~bootstrap/scss/bootstrap';
+@import "variables";
+@import "dashboard_base";
+@import "notify";
+@import "dashboard_responsive";
+@import "sidebar";
+@import "sidebar_mobile";
+
+.sidebar{
+	.dismiss{
+		i{
+			padding: 10px;
+		}
+	}
+}
+
+.header{
+	.header_links{
+		.open-menu{
+			top: 25px;
+		}
+	}
+}
+
+body{
+	min-height: 93% !important;
+}
+#profile{
+	.profile-header{
+		position: relative;
+		.profile-header-content{
+			.profile-detail-img{
+				width: 48px;
+				border-radius: 50%;
+			}
+			.profile-detail-content{
+				position: absolute;
+				left: 70px;
+				top:0;
+				.profile-select{
+					.profile-detail{
+						padding: 0;
+						margin-bottom: 0;
+						li{
+							display: inline-block;
+							text-decoration: none;
+			                padding-right: 0.5rem;
+			                &:last-child::before{
+			                    content: "/";
+			                    padding-right: 0.5rem;
+			                    color: #6E6D7A;
+			                }
+						}
+					}
+				}
+			}
+		}
+		.profile-header-button{
+			position: absolute;
+			top:0;
+			right:0;
+		}
+	}
+	#profile-tabs{
+		border: none;
+		li{
+			border: none;
+		}
+		.nav-link{
+			text-align: left;
+			color: #3D3D4E;
+			&.active{
+				border: none;
+				color: #0D0C22;
+			}
+		}
+	}
+	#profileTab{
+		display: block;
+		border: none !important;
+		li{
+			button{
+				border: none !important;
+				color: #3D3D4E;
+			}
+			button.active{
+				font-weight: 700;
+				color: #0D0C22;
+
+			}
+		}
+	}
+	#myProfileContent{
+		.form-check{
+			margin-bottom: 1rem !important;
+		}
+		.form-check-input:checked[type="checkbox"]{
+			background-color: #0d6efd !important;
+			border-color: #0d6efd !important;
+		}
+		input.form-control{
+			background-color: #F3F3F4 !important;
+			border-radius: 6px;
+			border: none !important;
+		}
+
+		textarea{
+			background-color: #F3F3F4 !important;
+			border-radius: 6px;
+			border: none !important;
+		}
+
+		.desc{
+				font-size: 16px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: 27px;
+				letter-spacing: 0em;
+				text-align: left;
+				color: #6E6D7A;
+		}
+
+		.tab-profile-header{
+			border-bottom: 1px solid #E7E7E9;
+			p{
+				font-size: 18px;
+				font-style: normal;
+				font-weight: 700;
+				line-height: 27px;
+				letter-spacing: 0em;
+				margin-bottom: 0.5rem;
+			}
+		}
+		.tab-profile-subheader{
+			font-size: 18px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 27px;
+			letter-spacing: 0em;
+			p, span{
+				margin-bottom: 0.5rem;
+			}
+		}
+		.bi-check-circle-fill.active{
+			font-size: 46px;
+			color: #34A853;
+			padding-right: 1rem;
+		}
+		.bi-check-circle-fill{
+			font-size: 46px;
+			color: #9E9EA7;
+			padding-right: 1rem;
+		}
+
+		.tab-profile-buttons{
+			margin-top: 3rem;
+			margin-bottom: 2rem;
+			button{
+				margin-right: 1rem;
+			}
+		}
+
+		.tab-edit{
+			.tab-edit-image{
+				align-items: center;
+				img{
+					width: 99px;
+					border-radius: 50%;
+				}
+				.tab-profile-buttons{
+					margin-top: 0 !important;
+					padding-left: 2rem;
+				}
+			}
+		}
+		.tab-level{
+			.tab-level-content{
+				ul{
+					list-style-type: none;
+					padding: 0;
+					li{
+						padding-top: 2rem;
+						.tab-profile-quest{
+							display: inline-flex;
+							align-items: center;
+						}
+					}
+				}
+			}
+			.tab-level-progress{
+				width: 360px;
+				display: inline-table;
+				.level-progress {
+					margin-bottom:0;
+					height: 20px;
+					border-radius: 30px;
+					.progress-bar{
+						background-color: #34A853;
+						border-radius: 30px;
+					}
+				}
+				.level-start {
+					float:left;
+					margin-left: -2rem;
+				}
+				.level-end {
+					float:right; 
+					text-align:right;
+					margin-right: -2rem;
+				}
+			}
+		}
+		.tab-settings{
+			.tab-profile-setting-content{
+				position: relative;
+				button{
+					position: absolute;
+					top: 10px;
+					right: 0;
+				}
+			}
+		}
+		.tab-info{
+			.tab-profile-info-phone{
+				select{
+					width: 50%;
+					margin-right: 2rem;
+				}
+			}
+		}
+		.tab-verification{
+			ul{
+				list-style-type: none;
+				padding: 0;
+				li{
+					padding-top: 2rem;
+					.tab-profile-quest{
+						display: inline-flex;
+						align-items: center;
+					}
+				}
+			}
+		}
+	}
+}

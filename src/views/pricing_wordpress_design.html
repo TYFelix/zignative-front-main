@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Zignative</title>
+    <meta name="author" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<body>
+<div id="cover"
+     style="position: absolute;
+            color: #0DB213;
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
+            z-index: 9999;
+            text-align: center;
+            padding-top: 25%">
+    <div class="spinner-border" role="status">
+        <span class="visually-hidden">Loading...</span>
+    </div>
+</div>
+
+<header>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html"><img src="./images/logo.png" class="img-fluid" alt="logo"/></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button"
+                               data-bs-toggle="dropdown">CATEGORIES</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./custom_logo_design.html">Custom Logo Design</a></li>
+                                <li><a class="dropdown-item" href="#">Custom WebPage Design</a></li>
+                                <li><a class="dropdown-item" href="#">Custom Mobile Design</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./explore.html">EXPLORE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./how_it_works.html">HOW IT WORKS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0)">PRICING</a>
+                        </li>
+                    </ul>
+                    <ul class="d-flex navbar-nav sign_in">
+                        <li class="nav-item"><a class="nav-link" href="#">LOG IN</a></li>
+                        <li class="nav-item"><button class="btn btn-primary">SIGN UP</button></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+<section id="pricing">
+    <section class="get_logodesign">
+        <div class="container">
+            <div class="current_url">
+                <ul>
+                    <li>Home</li>
+                    <li>Pricing</li>
+                    <li>WordPress design</li>
+                </ul>
+            </div>
+            <div class="show_pricing">
+                <p>Show me pricing for...</p>
+                <div class="dropdown">
+                    <a onclick="pricing.drop_func()">WordPress design<span class="dropdown_icon"></span>
+                        <select id="dropdownMenu" size=10>
+                            <option value="#">Logo Design</option>
+                            <option value="#">Album Cover</option>
+                            <option value="#">App Design</option>
+                            <option value="#">Banner ad</option>
+                            <option value="#">Book Cover</option>
+                            <option value="#">3D Design</option>
+                            <option value="#">Album Cover</option>
+                            <option value="#">App Design</option>
+                            <option value="#">Banner ad</option>
+                        </select>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="price_table">
+        <div class="container">
+            <div class="description text-center">
+                <p>We offer 4 packages to match any budget. All package include the award, all fees, full ownership of the winning design, and unlimited design concepts.</p>
+            </div>
+            <div class="paragraph">
+                <div data-scrollable="">
+                    <div data-scrollable-inner="">
+                        <table class="table table--full-width table--packages" cellpadding="0" cellspacing="0">
+                            <thead>
+                            <tr>
+                                <th></th>
+                                <th>
+                                    <div class="table-cell">
+                                        <div class="bordered-box bordered-box--bronze bordered-box--with-shadow-medium bordered-box--square-small bordered-box--centered bordered-box--in-text-flow bordered-box--responsive">
+                                            <div class="heading heading--h5 heading--no-margin heading--grey800">Bronze</div>
+                                        </div>
+                                        <div class="heading heading--h5 heading--no-margin heading--grey800">€275</div>
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="table-cell">
+                                        <div class="bordered-box bordered-box--silver bordered-box--with-shadow-medium bordered-box--square-small bordered-box--centered bordered-box--in-text-flow bordered-box--responsive">
+                                            <div class="heading heading--h5 heading--no-margin heading--grey800">Silver</div>
+                                        </div>
+                                        <div class="heading heading--h5 heading--no-margin heading--grey800">€475</div>
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="table-cell">
+                                        <div class="bordered-box bordered-box--gold bordered-box--with-shadow-medium bordered-box--square-small bordered-box--centered bordered-box--in-text-flow bordered-box--responsive">
+                                            <div class="heading heading--h5 heading--no-margin heading--grey800">Gold</div>
+                                        </div>
+                                        <div class="heading heading--h5 heading--no-margin heading--grey800">€675</div>
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="table-cell">
+                                        <div class="bordered-box bordered-box--platinum bordered-box--with-shadow-medium bordered-box--square-small bordered-box--centered bordered-box--in-text-flow bordered-box--responsive">
+                                            <div class="heading heading--h5 heading--no-margin heading--grey800">Platinum</div>
+                                        </div>
+                                        <div class="heading heading--h5 heading--no-margin heading--grey800">€875</div>
+                                    </div>
+                                </th>
+                            </tr>
+                            </thead>
+
+                            <tbody>
+                            <tr>
+                                <td colspan="5">
+                                    <div class="table-cell">
+                                        Design concepts (approx.)
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="table-cell table-cell--left-aligned">
+                                        Design concepts (approx.)
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table-cell price">
+                                        40
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table-cell price">
+                                        80
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table-cell price">
+                                        120
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table-cell price">
+                                        80
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="5">
+                                    <div class="table-cell">
+                                        100% money-back guarantee
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="table-cell table-cell--left-aligned">
+                                        100% money-back guarantee
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table-cell price check_badge">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table-cell price check_badge">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table-cell price check_badge">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table-cell price check_badge">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="5">
+                                    <div class="table-cell">
+                                        Full copyright ownership
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="table-cell table-cell--left-aligned">
+                                        Full copyright ownership
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table-cell price check_badge">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table-cell price check_badge">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table-cell price check_badge">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table-cell price check_badge">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="5">
+                                    <div class="table-cell">
+                                        Mid &amp; Top Level designers only
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="table-cell table-cell--left-aligned">
+                                        Mid &amp; Top Level designers only
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="price long_dash">
+                                        &#8212;
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="price long_dash">
+                                        &#8212;
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table-cell price check_badge">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="price long_dash">
+                                        &#8212;
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="5">
+                                    <div class="table-cell">
+                                        Top Level designers only
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="table-cell table-cell--left-aligned">
+                                        Top Level designers only
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="price long_dash">
+                                        &#8212;
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="price long_dash">
+                                        &#8212;
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="price long_dash">
+                                        &#8212;
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table-cell price check_badge">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="5">
+                                    <div class="table-cell">
+                                        Dedicated manager
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="table-cell table-cell--left-aligned">
+                                        Dedicated manager
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="price long_dash">
+                                        &#8212;
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="price long_dash">
+                                        &#8212;
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="price long_dash">
+                                        &#8212;
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table-cell price check_badge">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="5">
+                                    <div class="table-cell">
+                                        Prioritized support
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="table-cell table-cell--left-aligned">
+                                        Prioritized support
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="price long_dash">
+                                        &#8212;
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="price long_dash">
+                                        &#8212;
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="price long_dash">
+                                        &#8212;
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table-cell price check_badge">
+                                    </div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center contest_button">
+                <button class="btn btn-default">START A CONTEST</button>
+            </div>
+        </div>
+    </section>
+    <section class="price_help">
+        <div class="container">
+            <h3 class="text-center">Price is what you pay. Value is what you get.</h3>
+            <p class="description text-center">Not everyone has the same needs, so we created flexible features for every budget.
+                Zignative delivers great results and unmatched value.
+            </p>
+            <div class="help_contents">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <div class="content_body">
+                                        <h5>Real designs, not bids and proposals</h5>
+                                        <p>Instead of wasting your valuable time comparing bids and proposals, you'll pick from dozens of real designs.
+                                            When your project ends, just pick the one you love!</p>
+                                        <div class="accordion" id="accordionExample1">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingSeven">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                                        How many designs can you expect?
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample1">
+                                                    <div class="accordion-body">
+                                                        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="content_body">
+                                        <h5>Experienced designers who deliver results</h5>
+                                        <p>A global community of 220,000+ talented desingers who can help turn your customers and prospects into loyal fans in as little as 1 to 7 days.</p>
+                                        <div class="accordion" id="accordionExample2">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingEight">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                                        Can you ask designers to make changes?
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample2">
+                                                    <div class="accordion-body">
+                                                        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="content_body">
+                                        <h5>Powerful tools that save you time</h5>
+                                        <p>Easy-to-use, award-winning tools that speed up the design process. From project management to focus groups to collaboration, IP contracts, and more,</p>
+                                        <div class="accordion" id="accordionExample3">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="heading9">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
+                                                        Can you ask others to help you choose?
+                                                    </button>
+                                                </h2>
+                                                <div id="collapse9" class="accordion-collapse collapse" aria-labelledby="heading9" data-bs-parent="#accordionExample2">
+                                                    <div class="accordion-body">
+                                                        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="content_body">
+                                        <h5>Manage your project anytime, anywhere</h5>
+                                        <p>In the office, from your couch, or on-the-go, zignative's powerful platform is accessible from computers, tablets and smartphones.</p>
+                                        <div class="accordion" id="accordionExample4">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="heading10">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
+                                                        Who sees what?
+                                                    </button>
+                                                </h2>
+                                                <div id="collapse10" class="accordion-collapse collapse" aria-labelledby="heading10" data-bs-parent="#accordionExample4">
+                                                    <div class="accordion-body">
+                                                        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <div class="content_body">
+                                        <h5>We've got your back</h5>
+                                        <p>Get in touch with our award-winning customers support team by phone, email or chat - or get instant answers in our Help Center.
+                                            We're here to ensure your sucess.
+                                        </p>
+                                        <div class="accordion" id="accordionExample5">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="heading11">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
+                                                        How can you get help?
+                                                    </button>
+                                                </h2>
+                                                <div id="collapse11" class="accordion-collapse collapse" aria-labelledby="heading11" data-bs-parent="#accordionExample5">
+                                                    <div class="accordion-body">
+                                                        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="content_body">
+                                        <h5>Powerful intellectual property protections</h5>
+                                        <p>NDA and IP transfer agreements, private galleries and more. For over a decade, zignative is the design and naming service trusted by businesses and agencies.</p>
+                                        <div class="accordion" id="accordionExample6">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="heading12">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse12" aria-expanded="false" aria-controls="collapse12">
+                                                        What will you own when the project is over?
+                                                    </button>
+                                                </h2>
+                                                <div id="collapse12" class="accordion-collapse collapse" aria-labelledby="heading12" data-bs-parent="#accordionExample6">
+                                                    <div class="accordion-body">
+                                                        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="content_body">
+                                        <h5>Work you'll love, guaranteed</h5>
+                                        <p>We hate confusing refund policies, so ours is simple: if you're not 100% happy with your design project, contact us within 30days and we'll refund what you paid.</p>
+                                        <div class="accordion" id="accordionExample7">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="heading13">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse13" aria-expanded="false" aria-controls="collapse13">
+                                                        Why does crowdspring offer a guarantee?
+                                                    </button>
+                                                </h2>
+                                                <div id="collapse13" class="accordion-collapse collapse" aria-labelledby="heading13" data-bs-parent="#accordionExample7">
+                                                    <div class="accordion-body">
+                                                        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="content_body">
+                                        <h5>Save thousands today, more tomorrow</h5>
+                                        <p>Save thousands of dollars compared to the competition.
+                                            Beautiful design powerful enough for agencies & Fortune 500 companies at a fair price for every budget.
+                                        </p>
+                                        <div class="accordion" id="accordionExample8">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="heading14">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse14" aria-expanded="false" aria-controls="collapse14">
+                                                        How much does it cost to post a project?
+                                                    </button>
+                                                </h2>
+                                                <div id="collapse14" class="accordion-collapse collapse" aria-labelledby="heading14" data-bs-parent="#accordionExample8">
+                                                    <div class="accordion-body">
+                                                        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="price_faqs">
+        <div class="container">
+            <div class="faq_title">
+                <h3 class="text-center">Pricing FAQs</h3>
+            </div>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            How much does it cost to post a project?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>All our companies include an awardm which goes directly to the winning creative and crowdspring's fee.
+                                When you post your project, you'll choose between 4 different packages: Silver, Gold, Elite and Platinum, each of which includes award, our fee, and a set of features.
+                                You'll always know exactly what you'll pay. There are no hidden costs and no suprises.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            What is the difference between Silver, Gold, Elite and Platinum packages?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>All our companies include an awardm which goes directly to the winning creative and crowdspring's fee.
+                                When you post your project, you'll choose between 4 different packages: Silver, Gold, Elite and Platinum, each of which includes award, our fee, and a set of features.
+                                You'll always know exactly what you'll pay. There are no hidden costs and no suprises.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            What are the benefits of multiple awards in a project?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>All our companies include an awardm which goes directly to the winning creative and crowdspring's fee.
+                                When you post your project, you'll choose between 4 different packages: Silver, Gold, Elite and Platinum, each of which includes award, our fee, and a set of features.
+                                You'll always know exactly what you'll pay. There are no hidden costs and no suprises.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Who owns the intellectual property when you pick the winning entry in your project?
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>All our companies include an awardm which goes directly to the winning creative and crowdspring's fee.
+                                When you post your project, you'll choose between 4 different packages: Silver, Gold, Elite and Platinum, each of which includes award, our fee, and a set of features.
+                                You'll always know exactly what you'll pay. There are no hidden costs and no suprises.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            Why does zignative offer a 100% money back guarantee?
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>All our companies include an awardm which goes directly to the winning creative and crowdspring's fee.
+                                When you post your project, you'll choose between 4 different packages: Silver, Gold, Elite and Platinum, each of which includes award, our fee, and a set of features.
+                                You'll always know exactly what you'll pay. There are no hidden costs and no suprises.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSix">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                            Why choose zignative over an agency, freelancer or another design marketplace?
+                        </button>
+                    </h2>
+                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>All our companies include an awardm which goes directly to the winning creative and crowdspring's fee.
+                                When you post your project, you'll choose between 4 different packages: Silver, Gold, Elite and Platinum, each of which includes award, our fee, and a set of features.
+                                You'll always know exactly what you'll pay. There are no hidden costs and no suprises.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+<footer>
+    <div class="footer_contents">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                    <h5>COMPANY</h5>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                    <h5>Design services</h5>
+                    <ul>
+                        <li><a href="#">Design contests</a></li>
+                        <li><a href="#">Find a designer</a></li>
+                        <li><a href="#">Discover inspiration</a></li>
+                        <li><a href="#">Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                    <h5>Get a design</h5>
+                    <ul>
+                        <li><a href="#">Logo design</a></li>
+                        <li><a href="#">Business card</a></li>
+                        <li><a href="#">Web page design</a></li>
+                        <li><a href="#">T-shirt design</a></li>
+                        <li><a href="#">Browse all categories</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+                    <h5>Resources</h5>
+                    <ul>
+                        <li><a href="#">Become a designer</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Logo ideas</a></li>
+                        <li><a href="#">T-shirt ideas</a></li>
+                        <li><a href="#">Help</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-links text-center">
+                <a href="#"><img src="./images/facebook.png" class="img-fluid" alt="facebook"></a>
+                <a href="#"><img src="./images/twitter.png" class="img-fluid" alt="twitter"></a>
+                <a href="#"><img src="./images/in.png" class="img-fluid" alt="in"></a>
+            </div>
+            <p class="text-center certificate">© 2020–2022 Zignative SRL. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+<script src="./pricing.bundle.js"></script>
+</body>
+</html>

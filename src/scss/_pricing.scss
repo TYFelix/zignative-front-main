@@ -1,0 +1,218 @@
+section.get_logodesign{
+    background-color: #20204F;
+    .current_url{
+        margin-left: -3rem;
+        ul{
+            li{
+                display: inline-block;
+                text-decoration: none;
+                padding-right: 1rem;
+                &::before{
+                    content: "/";
+                    padding-right: 1rem;
+                    color: $primary;
+                }
+                &:first-child::before{
+                    content: "";
+                }
+                &:last-child{
+                    color: #C3C3E5;
+                }
+            }
+        }
+    }
+    .show_pricing{
+        padding-bottom: 1.5rem;
+        p{
+            font-size: 24px;
+            color: $primary;
+        }
+        a{
+            font-size: 50px;
+            color: $link-color;
+            border-color: #C3C3E5 !important;
+            border-width: 2px;
+            border-bottom: 1px solid;
+            select{
+                option{
+                    font-size: 20px;
+                }
+            }
+            &:hover{
+                color: $link-color;
+                cursor: pointer;    
+            }
+        }
+        #dropdownMenu{
+            height: 7rem;
+            top: 70px;
+            position: absolute;            
+            width: 21rem;
+            display: none;
+        }
+    }
+}
+
+section.price_table{
+    margin-top: 3rem;
+    .description{
+        p{
+            padding-left:200px;
+            padding-right:200px;
+            font-size: 18px;
+            font-style: italic;
+            color: $description-color;
+        }
+    }
+    .check_badge{
+        width: 36px;
+        height: 36px;
+        margin: 1rem auto;
+        line-height: 1.5rem;
+    }
+    .long_dash_icon{
+        width: 16px;
+        height: 21px;
+    }
+    .long_dash{
+        text-align: center;
+        margin: 1.5rem auto;
+    }
+    .pricing_packages{
+        .content{
+            width: 18%;
+            padding: 0 1.5rem 0 1.5rem;
+        }
+        .bronze_package{
+            border-color: #F0BB8B;
+        }
+        .silver_package{
+            border-color: #D6D6D6;
+        }
+        .gold_package{
+            border-color: #E3DD78;
+        }
+        .platinum_package{
+            border-color: #ABBDD6;
+        }
+    }
+    button{
+        margin-top: 1.5rem;
+    }
+}
+
+section.price_help{
+    background-color: #F2F5FA;
+    color:#707070;
+    margin-top:3rem;
+    h3{
+        padding-top: 3.5rem;
+    }
+    .description{
+        padding-top: 1rem;
+        padding-left:250px;
+        padding-right:250px;
+        font-size: 18px;
+        font-style: italic;
+        color: $description-color;
+    }
+    .help_contents{
+        padding-top: 2.5rem;
+        .col-md-6{
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+        .content{
+            li{
+                .content_body{
+                    margin-left:3.5rem;
+                }
+                h5{
+                    padding-top: 1rem;
+                    font-size: 20px;
+                }
+                p{
+                    color: $h-font-color;
+                    padding-top: 1rem;
+                    font-size: 16px;
+                }      
+                &::before{
+                    content: "";
+                    mask-image:  $check_badge_url; 
+                    -webkit-mask-image: $check_badge_url;
+                    background-color: #D41367;
+                    width: 36px;
+                    height: 36px;
+                    float: left;
+                    margin-top: 0.5rem;    
+                }  
+            }
+        }
+        .accordion-item{
+            border: none !important;
+            background-color: transparent !important;
+            color: $link-color;
+            button.accordion-button{
+                color:$link-color;
+                background-color: #F2F5FA;
+                padding-left: 0;
+                &::after{
+                    background-image: none;
+                    -webkit-mask-image: $plus_icon_url;
+                    mask-image: $plus_icon_url;
+                    transform: scale(.7) !important;
+                    background-color:$link-color !important;
+                    color:$link-color;
+                }
+            }
+            button.active.focus, button.active:focus,
+            button.focus, button:active.focus, 
+            button:active:focus, button:focus {
+                outline: none;
+                box-shadow: none;
+            }
+            button.accordion-button:not(.collapsed){
+                color: $link-color !important;
+                &::after{
+                    background-image: none;
+                    -webkit-mask-image: $minus_icon_url;
+                    mask-image: $minus_icon_url;
+                    background-color: $link-color !important;
+                    color: $link-color !important;    
+                }
+            }
+        }        
+    }
+}
+
+section.price_faqs{
+    margin-top:4rem;
+    padding-bottom: 3.5rem !important;
+    color:#707070;
+    .accordion{
+        padding-left: 15rem;
+        padding-right: 15rem;
+        .accordion-item{
+            border: none !important;
+            border-bottom: 1px solid rgba(0,0,0,0.125) !important;
+            button.accordion-button{
+                &::after{
+                    background-image: none;
+                    -webkit-mask-image: $plus_icon_url;
+                    mask-image: $plus_icon_url;
+                    transform: scale(.7) !important;
+                    background-color:$link-color !important;
+                }
+            }
+            button.accordion-button:not(.collapsed){
+                color: #111317 !important;
+                &::after{
+                    background-image: none;
+                    -webkit-mask-image: $minus_icon_url;
+                    mask-image: $minus_icon_url;
+                    background-color: $link-color !important;
+                }
+            }
+        }    
+    }    
+}
